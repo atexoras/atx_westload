@@ -1,15 +1,20 @@
 fx_version 'bodacious'
 games { 'common' }
 
-author { 'Cloudev' }
-description { 'Another Cloudev loading screen' }
+author { 'Westdev' }
+description { 'Another Westdev loading screen' }
 version '0.2.0'
 
 loadscreen 'load.html'
 
 files {
-    'loadscreen.html',
-    'css/style.css',
-    'img/logo.png',
-    'js/script.js',
+    'load.html',
+    'style.css',
+    'src/background.jpg',
 }
+
+client_scripts {
+    'client.lua'
+}
+
+server_script 'server.lua'
